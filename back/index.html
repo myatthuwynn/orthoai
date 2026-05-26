@@ -211,10 +211,15 @@ function handleDownload() {
   var full  = cc + phone;
 
   // FormSubmit — records phone, sends email to contact@orthoai.io
+  // Send to Google Sheet tracker
+  var formData = new FormData();
+  formData.append('phone',     full);
+  formData.append('condition', 'back');
+  formData.append('guide',     document.title);
   fetch('https://script.google.com/macros/s/AKfycbwuBfLJ5iatsNJXtkfScFcqReDhQ7z1N0wxjrBa3H16ZsqqydSeFRN0YzkZl7QKZYI/exec', {
     method: 'POST',
-    headers: {'Content-Type':'application/json','Accept':'application/json'},
-    body: JSON.stringify({ phone: full, condition: 'back', guide: 'Low Back Core Exercise Guide' })
+    mode:   'no-cors',
+    body:   formData,
   }).catch(function(){});  // silent fail — don't block download
 
   // Trigger download
