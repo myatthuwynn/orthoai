@@ -315,15 +315,47 @@
     </div>
   </div>
 
-  <!-- PHYSIO BANNER -->
+  <!-- PHYSIO SECTION -->
   <div class="physio-banner">
-    <div>
-      <h3>Free physio exercise library</h3>
-      <p>Surgeon-curated exercise programmes for lower back, knee, shoulder, and more. Free for patients. No signup required to browse.</p>
+    <div style="width:100%">
+      <p style="font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:#9FE1CB;margin-bottom:.5rem;">Free for patients</p>
+      <h3 style="margin-bottom:.4rem;">Physio exercise library</h3>
+      <p style="font-size:14px;color:#9FE1CB;margin-bottom:1.25rem;">Surgeon-curated guides. Choose a condition below and download instantly — free.</p>
+
+      <!-- 3 condition cards -->
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.75rem;margin-bottom:1.25rem;">
+
+        <a href="/knee" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:10px;padding:1rem;text-decoration:none;display:block;transition:background .15s;" onmouseover="this.style.background='rgba(255,255,255,0.14)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">
+          <div style="font-size:22px;margin-bottom:.4rem;">🦵</div>
+          <div style="font-size:13px;font-weight:600;color:#fff;margin-bottom:3px;">OA Knee</div>
+          <div style="font-size:11px;color:#9FE1CB;">2 exercises · Free PDF</div>
+        </a>
+
+        <a href="/shoulder" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:10px;padding:1rem;text-decoration:none;display:block;transition:background .15s;" onmouseover="this.style.background='rgba(255,255,255,0.14)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">
+          <div style="font-size:22px;margin-bottom:.4rem;">💪</div>
+          <div style="font-size:13px;font-weight:600;color:#fff;margin-bottom:3px;">Frozen Shoulder</div>
+          <div style="font-size:11px;color:#9FE1CB;">Pendulum · Free PDF</div>
+        </a>
+
+        <a href="/back" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:10px;padding:1rem;text-decoration:none;display:block;transition:background .15s;" onmouseover="this.style.background='rgba(255,255,255,0.14)'" onmouseout="this.style.background='rgba(255,255,255,0.08)'">
+          <div style="font-size:22px;margin-bottom:.4rem;">🔄</div>
+          <div style="font-size:13px;font-weight:600;color:#fff;margin-bottom:3px;">Low Back</div>
+          <div style="font-size:11px;color:#9FE1CB;">Core · Free PDF</div>
+        </a>
+
+      </div>
+
+      <!-- Paid plan teaser -->
+      <div style="border-top:1px solid rgba(255,255,255,0.12);padding-top:1rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;">
+        <div>
+          <span style="font-size:12px;color:#9FE1CB;">Want a full structured programme?</span>
+          <span style="font-size:12px;color:rgba(255,255,255,0.4);margin-left:6px;">Coming soon</span>
+        </div>
+        <a href="/physio" class="btn-light" style="font-size:13px;padding:8px 16px;">
+          Learn more →
+        </a>
+      </div>
     </div>
-    <a href="/physio" class="btn-light">
-      Get free plan →
-    </a>
   </div>
 </section>
 
